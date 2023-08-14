@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>ToDo</title>
+    <link rel="stylesheet" href="./css/bootstrap-4.4.1.css">
+  </head>
+  <body>
+    <section class="vh-100">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col">
+              <div class="card" id="list1" style="border-radius: .75rem; background-color: #eff1f2;">
+                <div class="card-body py-4 px-4 px-md-5">
+      
+                  <p class="h1 text-center mt-3 mb-4 pb-3 text-primary">
+                    <i class="fas fa-check-square me-1"></i>
+                    <u>ToDo</u>
+                  </p>
+      
+                  <div class="pb-2">
+                    <div class="card">
+                      <div class="card-body">
+                        <div class="d-flex flex-row align-items-center">
+                          <input type="text" class="form-control form-control-lg" id="ToDoText"
+                            placeholder="Add new...">
+                          <a href="#!" data-mdb-toggle="tooltip" title="Set due date"><i
+                              class="fas fa-calendar-alt fa-lg me-3"></i></a>
+                          <div>
+                            <button type="button" id="ToDoAddButton" class="btn btn-primary">Add</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+      
+                  <hr class="my-4">
+      
+                  <div class="d-flex justify-content-end align-items-center mb-4 pt-2 pb-3">
+                    <a href="#!" style="color: #23af89;" data-mdb-toggle="tooltip" title="Ascending"><i
+                        class="fas fa-sort-amount-down-alt ms-2"></i></a>
+                  </div>
+      
+                  <div id="ToDoList">
+                    
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>       
+      </section>
+      <script src="./js/popper.min.js"></script>
+      <script src="./js/jquery-3.4.1.min.js"></script>
+      <script src="./js/bootstrap-4.4.1.js"></script>
+      <script src="./js/index.js"></script>
+  </body>
+</html>
